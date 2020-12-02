@@ -1,5 +1,5 @@
 /*
-Copyright 2020 Paul Ewing
+Copyright 2020 Stefan Sundin "4pplet" <4pplet@protonmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,4 +14,20 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include "speedo_v2.h"
+#include "rev_b.h"
+
+bool led_update_kb(led_t led_state) {
+    bool res = led_update_user(led_state);
+    if(CAPS_LOCK_ENABLE){
+        if(res) {
+            if(led_state.caps_lock){
+                rgblight_enable();
+                rgblight_mode(1);
+                rgblight_sethsv_noeeprom(CAPS_LOCK_COLOR);
+            }
+            else
+                rgblight_disable_noeeprom();
+        }
+    }
+    return res;
+}
