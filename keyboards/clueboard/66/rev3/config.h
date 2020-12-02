@@ -16,8 +16,8 @@
 
 /* ROWS: Top to bottom, COLS: Left to right
 */
-#define MATRIX_ROW_PINS { B2, C7, C6, B6, B5, B0, B3, D5, D3, D2 }
-#define MATRIX_COL_PINS { F0, F1, F4, F5, F6, F7, E6, B1 }
+#define MATRIX_ROW_PINS { D6, B7, B5, B6, E6, C6, D0, D1, D3, D2 }
+#define MATRIX_COL_PINS { F7, F6, F5, F4, F1, F0, B4, D7 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -49,7 +49,7 @@
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
 
-#define LED_CAPS_LOCK_PIN B4
+#define LED_CAPS_LOCK_PIN D4
 
 /* Backlight configuration
  */
@@ -57,8 +57,8 @@
 
 /* Underlight configuration
  */
-#define RGB_DI_PIN D7
-#define RGBLED_NUM 18     // Number of LEDs
+#define RGB_DI_PIN C7
+#define RGBLED_NUM 55    // Number of LEDs
 #define RGBLIGHT_HUE_STEP 32
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
@@ -66,7 +66,7 @@
 #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_EFFECT_BREATHE_CENTER 1
 #define RGBLIGHT_EFFECT_BREATHE_MAX 200
-#define RGBLIGHT_EFFECT_CHRISTMAS_INTERVAL 666*2
+#define RGBLIGHT_EFFECT_CHRISTMAS_INTERVAL 654*2
 #define RGBLIGHT_EFFECT_CHRISTMAS_STEP 1
 #define RGBLIGHT_EFFECT_KNIGHT_LENGTH 3   // How many LEDs wide to light up
 #define RGBLIGHT_EFFECT_KNIGHT_OFFSET 2   // The led to start at

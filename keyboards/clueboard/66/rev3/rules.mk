@@ -9,7 +9,8 @@ MCU = atmega32u4
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = atmel-dfu
+#BOOTLOADER = atmel-dfu
+BOOTLOADER = caterina
 
 # Build Options
 #   comment out to disable the options.
@@ -29,3 +30,4 @@ UNICODE_ENABLE = no 		# Unicode
 BLUETOOTH_ENABLE = no   # Enable Bluetooth with the Adafruit EZ-Key HID
 
 LAYOUTS = 66_ansi 66_iso
+
